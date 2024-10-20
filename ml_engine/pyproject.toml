@@ -9,7 +9,7 @@ authors = [
     { name = "Kartik Kanugo", email = "karthik.kanugo@gmail.com" },
 ]
 description = "Simple gpt module for learning predictions"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Natural Language :: English",
