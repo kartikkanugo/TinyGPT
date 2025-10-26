@@ -18,8 +18,8 @@ Inspired by Sebastian Raschka’s _Build a Large Language Model (From Scratch)_ 
 
 ### 🧩 **Stage 1 – Setup & Environment**
 
-- [ ] Create project structure and setup Python virtual environment.
-- [ ] Load a small sample dataset (e.g., TinyStories, Shakespeare, or custom text).
+- [x] Create project structure and setup Python virtual environment.
+- [x] Load a small sample dataset (e.g., TinyStories, Shakespeare, or custom text).
 
 ### 🧠 **Stage 2 – Tokenization & Data Pipeline**
 
