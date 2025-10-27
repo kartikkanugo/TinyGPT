@@ -5,6 +5,13 @@ Inspired by Sebastian Raschka’s _Build a Large Language Model (From Scratch)_ 
 
 ---
 
+
+## TinyGPT — Python Module
+
+TinyGPT is a Python module that provides a collection of helper functions and classes designed to build and experiment with lightweight large language models (LLMs).  
+It serves as the foundational layer for model components such as tokenization, training, and inference.
+
+
 ## 🎯 Project Goals
 
 - Learn the **core principles** behind transformer-based language models.
