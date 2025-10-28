@@ -5,12 +5,10 @@ Inspired by Sebastian Raschka’s _Build a Large Language Model (From Scratch)_ 
 
 ---
 
-
 ## TinyGPT — Python Module
 
 TinyGPT is a Python module that provides a collection of helper functions and classes designed to build and experiment with lightweight large language models (LLMs).  
 It serves as the foundational layer for model components such as tokenization, training, and inference.
-
 
 ## 🎯 Project Goals
 
@@ -30,8 +28,8 @@ It serves as the foundational layer for model components such as tokenization, t
 
 ### 🧠 **Stage 2 – Tokenization & Data Pipeline**
 
-- [ ] Implement a basic **character-level tokenizer** (encode/decode).
-- [ ] Extend to a **byte-pair encoding (BPE)** tokenizer later.
+- [x] Implement a basic **character-level tokenizer** (encode/decode).
+- [x] Extend to a **byte-pair encoding (BPE)** using tiktoken.
 - [ ] Split data into **train/validation** sets.
 - [ ] Create a **PyTorch Dataset & DataLoader** for batching.
 
