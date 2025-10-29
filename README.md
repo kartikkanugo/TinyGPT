@@ -30,12 +30,12 @@ It serves as the foundational layer for model components such as tokenization, t
 
 - [x] Implement a basic **character-level tokenizer** (encode/decode).
 - [x] Extend to a **byte-pair encoding (BPE)** using tiktoken.
-- [ ] Split data into **train/validation** sets.
-- [ ] Create a **PyTorch Dataset & DataLoader** for batching.
+- [x] Create a **PyTorch Dataset & DataLoader** for batching.
+- [x] Implement **positional embeddings**.
+- [x] Implement **input embeddings**.
 
 ### ⚙️ **Stage 3 – Transformer Core Components**
 
-- [ ] Implement **positional embeddings**.
 - [ ] Implement **multi-head self-attention** mechanism from scratch.
 - [ ] Add **feed-forward (MLP)** block and **LayerNorm**.
 - [ ] Stack multiple transformer blocks to form the GPT backbone.
