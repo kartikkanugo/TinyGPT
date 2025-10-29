@@ -145,7 +145,7 @@ class TikTokenizer:
     ----------
     model_name : str, optional
         Name of the TikToken model encoding to use (default is "gpt2").
-    allowed_special : set[str] | "all" | None, optional
+    allowed_special : set[str] | "all"|None, optional
         Set or mode of allowed special tokens.
         - If None: no special tokens allowed.
         - If "all": all TikToken special tokens are allowed.
@@ -155,7 +155,7 @@ class TikTokenizer:
     def __init__(
         self,
         model_name: str = "gpt2",
-        allowed_special: Optional[Set[str]] = None,
+        allowed_special: Optional[Set[str] | str] = None,
     ):
         self.enc = tiktoken.get_encoding(model_name)
         self.allowed_special = allowed_special
@@ -164,7 +164,7 @@ class TikTokenizer:
         """Encode text into token IDs."""
         if self.allowed_special is None:
             return self.enc.encode(text)
-        elif isinstance(self.allowed_special, set):
+        elif isinstance(self.allowed_special, set | str):
             return self.enc.encode(text, allowed_special=self.allowed_special)
         else:
             raise TypeError("allowed_special must be None or a set[str]")
@@ -177,7 +177,11 @@ class TikTokenizer:
         """Count number of tokens in text."""
         if self.allowed_special is None:
             return len(self.enc.encode(text))
-        elif isinstance(self.allowed_special, set):
+        elif isinstance(self.allowed_special, set | str):
             return len(self.enc.encode(text, allowed_special=self.allowed_special))
         else:
             raise TypeError("allowed_special must be None or a set[str]")
+
+    def get_n_vocab_tokens(self) -> int:
+        """Returns the number of tokens in vocab example gpt2"""
+        return self.enc.n_vocab

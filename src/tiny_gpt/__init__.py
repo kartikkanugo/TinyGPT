@@ -14,6 +14,7 @@ It includes:
 from .env import env_display_tinygpt_modules
 from .io_utils import io_load_text_file
 from .tokenizer import RegexTokenizer, TikTokenizer
+from .data_loader import tiny_data_loader
 
 
 __all__ = [
@@ -24,4 +25,6 @@ __all__ = [
     # Tokenizers
     "RegexTokenizer",
     "TikTokenizer",
+    # Dataloaders
+    "tiny_data_loader",
 ]
