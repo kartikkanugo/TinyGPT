@@ -15,7 +15,12 @@ from .env import env_display_tinygpt_modules
 from .io_utils import io_load_text_file
 from .tokenizer import RegexTokenizer, TikTokenizer
 from .data_loader import tiny_data_loader
-from .self_attention import TinySelfAttentionQKV, TinySelfAttentionQKVLinear
+from .self_attention import (
+    TinySelfAttentionQKV,
+    TinySelfAttentionQKVLinear,
+    TinyCausalAttention,
+    TinyMultiHeadAttention,
+)
 
 
 __all__ = [
@@ -31,4 +36,6 @@ __all__ = [
     # Self Attention
     "TinySelfAttentionQKV",
     "TinySelfAttentionQKVLinear",
+    "TinyCausalAttention",
+    "TinyMultiHeadAttention",
 ]

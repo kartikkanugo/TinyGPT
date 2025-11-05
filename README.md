@@ -38,7 +38,8 @@ It serves as the foundational layer for model components such as tokenization, t
 
 - [x] Implement Simple Self Attention
 - [x] Implement QKV Self Attention
-- [ ] Implement **multi-head self-attention** mechanism from scratch.
+- [x] Implement Single Head Self Attention
+- [x] Implement **multi-head self-attention** mechanism from scratch.
 - [ ] Add **feed-forward (MLP)** block and **LayerNorm**.
 - [ ] Stack multiple transformer blocks to form the GPT backbone.
 
