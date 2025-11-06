@@ -40,30 +40,33 @@ It serves as the foundational layer for model components such as tokenization, t
 - [x] Implement QKV Self Attention
 - [x] Implement Single Head Self Attention
 - [x] Implement **multi-head self-attention** mechanism from scratch.
+
+### ⚙️ **Stage 4 – Implement GPT Model **
+
 - [ ] Add **feed-forward (MLP)** block and **LayerNorm**.
 - [ ] Stack multiple transformer blocks to form the GPT backbone.
 
-### 🔥 **Stage 4 – Training Loop**
+### 🔥 **Stage 5 – Training Loop**
 
 - [ ] Write training loop with **cross-entropy loss** and **AdamW optimizer**.
 - [ ] Add **gradient clipping** and **learning rate scheduler**.
 - [ ] Implement checkpoint saving & resuming.
 - [ ] Log training/validation loss and visualize progress (matplotlib or wandb).
 
-### 💬 **Stage 5 – Text Generation**
+### 💬 **Stage 6 – Text Generation**
 
 - [ ] Implement sampling (`temperature`, `top-k`, `top-p` decoding).
 - [ ] Generate text from seed prompts and tune parameters.
 - [ ] Create a simple CLI interface for text generation.
 
-### ⚡ **Stage 6 – Optimization & Experiments**
+### ⚡ **Stage 7 – Optimization & Experiments**
 
 - [ ] Profile GPU memory and optimize batch sizes.
 - [ ] Experiment with smaller/larger model configs.
 - [ ] Try mixed-precision training (FP16) on RTX 4070.
 - [ ] Compare training speed between CPU and GPU.
 
-### 🧪 **Stage 7 – Extensions (Optional but Fun)**
+### 🧪 **Stage 8 – Extensions (Optional but Fun)**
 
 - [ ] Implement a **BPE tokenizer** (from Hugging Face or custom).
 - [ ] Add **configurable model hyperparameters** via JSON or argparse.
