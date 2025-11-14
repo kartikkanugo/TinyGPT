@@ -44,8 +44,8 @@ It serves as the foundational layer for model components such as tokenization, t
 ### ⚙️ **Stage 4 – Implement GPT Model **
 
 - [x] Implement Layer Norm
-- [ ] Add **feed-forward (MLP)** block and **LayerNorm**.
-- [ ] Stack multiple transformer blocks to form the GPT backbone.
+- [x] Add **feed-forward (MLP)** block and **LayerNorm**.
+- [x] Stack multiple transformer blocks to form the GPT backbone.
 
 ### 🔥 **Stage 5 – Training Loop**
 

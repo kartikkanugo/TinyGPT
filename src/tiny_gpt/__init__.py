@@ -22,6 +22,10 @@ from .self_attention import (
     TinyMultiHeadAttention,
 )
 
+from .gpt_model import (
+    TinyGPTModel,
+    TinyTransformerBlock,
+)
 
 __all__ = [
     # Environment utilities
@@ -38,4 +42,7 @@ __all__ = [
     "TinySelfAttentionQKVLinear",
     "TinyCausalAttention",
     "TinyMultiHeadAttention",
+    # Gpt Model
+    "TinyGPTModel",
+    "TinyTransformerBlock",
 ]
