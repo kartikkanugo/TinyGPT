@@ -27,6 +27,9 @@ from .gpt_model import (
     TinyTransformerBlock,
 )
 
+from .text_generation import tiny_generate_text_simple
+
+
 __all__ = [
     # Environment utilities
     "env_display_tinygpt_modules",
@@ -45,4 +48,6 @@ __all__ = [
     # Gpt Model
     "TinyGPTModel",
     "TinyTransformerBlock",
+    # Text Generation
+    "tiny_generate_text_simple",
 ]
